@@ -20,5 +20,7 @@ int main(void) {
   strcpy(string, "abcdefghi");
   string[9] = '\0';
   printf("%s\n", string);
+  free(user);
+  free(string);
   return EXIT_SUCCESS;
 }
