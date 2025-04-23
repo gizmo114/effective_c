@@ -13,4 +13,6 @@ int main(void) {
   }
 
   printf("%s\n", str_cpy);
+
+  free(str_cpy);
 }

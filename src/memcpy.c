@@ -22,5 +22,7 @@ int main(void) {
 
   printf("%X\t%X\n", dst_p->a, dst_p->b);
 
+  free(dst_p);
+
   return EXIT_SUCCESS;
 }
