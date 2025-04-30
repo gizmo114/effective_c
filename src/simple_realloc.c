@@ -13,8 +13,8 @@ int main(void) {
   }
   print_array(array, ARRAY_SIZE);
 
-  int *handler = realloc(array, 7);
-  if (handler == nullptr) {
+  int *handler = realloc(array, 7 * sizeof(int));
+  if (handler == NULL) {
     printf("Memory allocation issue!");
     return EXIT_FAILURE;
   }
